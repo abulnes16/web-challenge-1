@@ -1,0 +1,83 @@
+/*Font imports*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+/* Variables */
+:root {
+  --primary-color: hsl(257, 40%, 49%);
+  --font-color: white;
+  --heading-font: "Poppins", sans-serif;
+  --text-font: "Open Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--font-color);
+  font-family: var(--text-font);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 80%;
+  margin: 15px auto;
+}
+
+/*----------------Header Styles-------------------- */
+
+header {
+  background-image: url("../images/bg-mobile.svg");
+  background-size: cover;
+  background-position-x: center;
+  padding: 40px 30px 30px;
+}
+
+.logo-container {
+  width: 45%;
+  margin-bottom: 40px;
+}
+
+/* ------------------Main Styles------------------------ */
+
+main {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.product-info__title {
+  font-family: var(--heading-font);
+  margin-bottom: 15px;
+}
+
+.product-info__description {
+  line-height: 1.5em;
+  margin-bottom: 20px;
+}
+
+.button {
+  width: 200px;
+  padding: 12px 30px;
+  border-radius: 30px;
+  background-color: white;
+  color: var(--primary-color);
+  box-shadow: 1px 4px 7px 5px #59449e;
+  border: none;
+}
+
+/* --------------Footer Styles----------------- */
+
+.social-media ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
+    <link rel="stylesheet" href="css/styles.css" />
     <link
       rel="icon"
       type="image/png"
@@ -15,21 +15,36 @@
     <title>
       Frontend Mentor | Huddle landing page with single introductory section
     </title>
-
-    <!-- No dude en eliminar estos estilos o personalizarlos en su propia hoja de estilo 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
-    Build The Community Your Fans Will Love Huddle re-imagines the way we build
-    communities. You have a voice, but so does your audience. Create connections
-    with your users as you engage in genuine discussion. Register
+    
+    <header>
+      <figure class="logo-container">
+        <img src="./images/logo.svg" alt="logo" />
+      </figure>
+      <figure>
+        <img src="./images/illustration-mockups.svg" alt="mockups" />
+      </figure>
+    </header>
+    <div class="container">
+      <main>
+        <section class="product-info">
+          <h1 class="product-info__title">Build The Community Your Fans Will Love</h1>
+          <p class="product-info__description">
+            Huddle re-imagines the way we build communities. You have a voice,
+            but so does your audience. Create connections with your users as you
+            engage in genuine discussion.
+          </p>
+          <button class="button">Register</button>
+        </section>
+      </main>
+      <footer class="social-media">
+        <ul>
+          <li>Facebook</li>
+          <li>Twitter</li>
+          <li>Instagram</li>
+        </ul>
+      </footer>
+    </div>
   </body>
 </html>
