@@ -136,9 +136,10 @@ main {
     background-position: center;
   }
   .grid-container {
+    width: 85%;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    padding: 40px 50px  10px 80px;
+    margin: 30px auto 0;
   }
   header {
     background-image: none;
@@ -149,7 +150,7 @@ main {
     width: 30%;
   }
   .ilustration-container {
-    width: 95%;
+    width: 98%;
   }
   main {
     display: flex;
