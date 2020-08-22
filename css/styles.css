@@ -30,6 +30,7 @@ img {
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
+  padding-bottom: 30px;
 }
 
 /*----------------Header Styles-------------------- */
@@ -50,16 +51,18 @@ header {
 
 main {
   width: 80%;
-  margin: 20px auto 80px;
+  margin: 20px auto 60px;
   text-align: center;
 }
 
 .product-info__title {
+  font-size: 1.5em;
   font-family: var(--heading-font);
   margin-bottom: 15px;
 }
 
 .product-info__description {
+  font-size: 1em;
   line-height: 1.5em;
   margin-bottom: 25px;
 }
@@ -70,6 +73,7 @@ main {
   border-radius: 30px;
   background-color: white;
   color: var(--primary-color);
+  font-size: 0.9em;
   box-shadow: 1px 4px 7px 5px #59449e;
   border: none;
 }
@@ -91,10 +95,88 @@ main {
   margin: 0 5px;
   border-radius: 50%;
   border: 1px solid white;
+  font-size: 1em;
   color: var(--font-color);
 }
-
 .social-media__link a {
   color: inherit;
   text-decoration: none;
+}
+
+/* ----------------Media Queries------------------- */
+@media screen and (min-width: 425px) {
+  main {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .product-info {
+    font-size: 18px;
+  }
+
+  .button {
+    width: 300px;
+    padding: 16px 30px;
+  }
+
+  .social-media__link {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2em;
+    margin: 0 8px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background-image: url("../images/bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    padding: 40px 50px  10px 60px;
+  }
+  header {
+    background-image: none;
+    padding: 0;
+  }
+
+  .logo-container {
+    width: 30%;
+  }
+  .ilustration-container {
+    width: 95%;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    margin: 0;
+  }
+
+  .social-media {
+    grid-column: 2/3;
+    align-self: flex-start;
+    justify-self: end;
+    padding: 0 30px 30px 0;
+  }
+
+  .product-info {
+    font-size: 17px;
+  }
+
+  .product-info__title {
+    font-size: 2.2em;
+  }
+
+  .button {
+    width: 175px;
+    padding: 14px 30px;
+  }
 }
